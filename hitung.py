@@ -1,5 +1,6 @@
 import streamlit as st
 
+st.set_page_config(page_title= "tugas fisika komputasi awan",page_icon="🌡️",layout= "wide")
 st.subheader("Kalkulator Suhu 🌡️")
 with st.container():
     st.write("---")
@@ -30,6 +31,8 @@ def convert_temperature(value, from_unit, to_unit):
 if x is not None:
     n = convert_temperature(x, sx, sy)
     with right_column:
+        st.subheader("hasil konversi")
+        st.write("###")
         st.write(x, " ", sx, "=", n, sy)
 st.write("---")
 st.caption("agna aldhaka-fisika_komputasi_awan")
