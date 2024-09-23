@@ -4,10 +4,12 @@ st.subheader("Kalkulator Suhu 🌍")
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
-    with right_column:
+    with left_column:
         x = st.number_input("Insert a number", value=0.0)
         sx = st.text_input("Satuan (C, F, K)", "C").upper()
         sy = st.text_input("Dikonversi ke (C, F, K)", "C").upper()
+    with right_column
+        st.write(x, " ", sx, "=", n, sy)
 
 # Fungsi untuk konversi suhu
 def convert_temperature(value, from_unit, to_unit):
@@ -30,6 +32,6 @@ def convert_temperature(value, from_unit, to_unit):
 # Melakukan konversi dan menampilkan hasil
 if x is not None:
     n = convert_temperature(x, sx, sy)
-    st.write(x, " ", sx, "=", n, sy)
+    
 
 
