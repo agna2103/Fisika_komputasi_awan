@@ -33,7 +33,7 @@ if x is not None:
     with right_column:
         st.subheader("hasil konversi")
         st.write("###")
-        st.write(x, " ", sx, "=", n, sy)
+        st.latex(x, " ", sx, "=", n, sy)
 st.write("---")
 st.caption("agna aldhaka-fisika_komputasi_awan")
 
