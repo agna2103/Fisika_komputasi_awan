@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.subheader("Kalkulator Suhu 🌍")
+st.subheader("Kalkulator Suhu 🌡️")
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
@@ -32,6 +32,7 @@ if x is not None:
     with right_column:
         st.write(x, " ", sx, "=", n, sy)
 st.write("---")
+st.caption("agna aldhaka-fisika_komputasi_awan")
 
 
     
