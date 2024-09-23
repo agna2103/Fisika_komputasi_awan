@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Input suhu dan satuan awal
+st.subheader("Agna Aldhaka 🌍")
 x = st.number_input("Insert a number", value=0.0)
 sx = st.text_input("Satuan (C, F, K)", "C").upper()
 
