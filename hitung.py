@@ -19,12 +19,16 @@ def convert_temperature(value, from_unit, to_unit):
         value = (value - 32) * 5/9
     elif from_unit == "K":
         value = value - 273.15
+    elif from_unit == "R":
+        value = value * 5/4
     
     # Konversi dari Celsius ke satuan yang diinginkan
     if to_unit == "F":
         return (value * 9/5) + 32
     elif to_unit == "K":
         return value + 273.15
+    elif to_unit == "R":
+        return value * 4/5
     return value  # jika to_unit adalah "C"
 
 # Melakukan konversi dan menampilkan hasil
