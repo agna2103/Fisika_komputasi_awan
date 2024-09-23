@@ -8,7 +8,7 @@ with st.container():
         x = st.number_input("Insert a number", value=0.0)
         sx = st.text_input("Satuan (C, F, K)", "C").upper()
         sy = st.text_input("Dikonversi ke (C, F, K)", "C").upper()
-    with right_column
+    with right_column:
         st.write(x, " ", sx, "=", n, sy)
 
 # Fungsi untuk konversi suhu
