@@ -7,7 +7,7 @@ with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
         x = st.number_input("Insert a number", value=0.0)
-        sx = st.text_input("Satuan (C, F, K)", "C").upper()
+        sx = st.selectbox("Satuan", ("C", "F", "R", "K"), key='sx')
         sy = st.text_input("Dikonversi ke (C, F, K)", "C").upper()
 # Fungsi untuk konversi suhu
 def convert_temperature(value, from_unit, to_unit):
