@@ -12,8 +12,7 @@ with st.container():
 # Fungsi untuk konversi suhu
 def convert_temperature(value, from_unit, to_unit):
     if from_unit == to_unit:
-        return value
-    
+        return value   
     # Konversi ke Celsius
     if from_unit == "F":
         value = (value - 32) * 5/9
@@ -21,7 +20,6 @@ def convert_temperature(value, from_unit, to_unit):
         value = value - 273.15
     elif from_unit == "R":
         value = value * 5/4
-    
     # Konversi dari Celsius ke satuan yang diinginkan
     if to_unit == "F":
         return (value * 9/5) + 32
@@ -31,7 +29,6 @@ def convert_temperature(value, from_unit, to_unit):
         return value * 4/5
     return value  # jika to_unit adalah "C"
 
-# Melakukan konversi dan menampilkan hasil
 if x is not None:
     n = convert_temperature(x, sx, sy)
     with right_column:
