@@ -1,11 +1,13 @@
 import streamlit as st
 
-st.subheader("Agna Aldhaka 🌍")
-x = st.number_input("Insert a number", value=0.0)
-sx = st.text_input("Satuan (C, F, K)", "C").upper()
-
-# Input satuan yang ingin dikonversi
-sy = st.text_input("Dikonversi ke (C, F, K)", "C").upper()
+st.subheader("Kalkulator Suhu 🌍")
+with st.container():
+    st.write("---")
+    left_column, right_column = st.columns(2)
+    with right_column:
+        x = st.number_input("Insert a number", value=0.0)
+        sx = st.text_input("Satuan (C, F, K)", "C").upper()
+        sy = st.text_input("Dikonversi ke (C, F, K)", "C").upper()
 
 # Fungsi untuk konversi suhu
 def convert_temperature(value, from_unit, to_unit):
