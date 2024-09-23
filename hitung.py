@@ -31,6 +31,7 @@ if x is not None:
     n = convert_temperature(x, sx, sy)
     with right_column:
         st.write(x, " ", sx, "=", n, sy)
+st.write("---")
 
 
     
