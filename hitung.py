@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title= "tugas fisika komputasi awan",page_icon="🌡️",layout= "wide")
-st.subheader("Kalkulator Suhu 🌡️")
+st.header("Kalkulator Suhu 🌡️")
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
