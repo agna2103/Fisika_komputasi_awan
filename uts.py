@@ -4,6 +4,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 
+st.markdown("""
+    <style>
+    .stButton > button {
+        font-size: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 st.header('Fisika Komputasi Awan :sparkles:')
 with st.container():
     st.write("---")
