@@ -5,8 +5,10 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 
 st.header('Fisika Komputasi Awan :sparkles:')
+st.divider()
 st.title("Agna Aldhaka Indra Alam ")
 st.title("NIM : 210322607278")
+st.divider()
 circle = Circle((0, 0), 1, color='red', fill=False, linewidth=2, linestyle='-', alpha=0.2)
 x = []
 y = []
