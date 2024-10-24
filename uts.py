@@ -4,8 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 
-
-st.title("Fisika Komputasi Awan")
+st.header('Fisika Komputasi Awan :sparkles:')
 st.title("Agna Aldhaka Indra Alam ")
 st.title("NIM : 210322607278")
 circle = Circle((0, 0), 1, color='red', fill=False, linewidth=2, linestyle='-', alpha=0.2)
@@ -52,6 +51,4 @@ ax.set_xlim([-1, 1])
 ax.set_ylim([-1, 1])
 st.pyplot(fig)
 st.caption("Lingkaran dengan ukuran dan warna acak dan tersebar didalam lingkaran dengan radius 1")
-st.divider()
 
-st.divider()
