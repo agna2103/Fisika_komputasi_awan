@@ -5,15 +5,13 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 
 st.header('Fisika Komputasi Awan :sparkles:')
-st.divider()
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with right_column:
-        st.title("Agna Aldhaka Indra Alam ")
-    with left_column:
         st.title("NIM : 210322607278")
-
+    with left_column:
+        st.title("Agna Aldhaka Indra Alam ")
 st.divider()
 circle = Circle((0, 0), 1, color='red', fill=False, linewidth=2, linestyle='-', alpha=0.2)
 x = []
