@@ -51,4 +51,6 @@ ax.set_xlim([-1, 1])
 ax.set_ylim([-1, 1])
 st.pyplot(fig)
 st.caption("Lingkaran dengan ukuran dan warna acak dan tersebar didalam lingkaran dengan radius 1")
-
+with st.container():
+    st.write("---")
+    st.caption("agna aldhaka-uts fisika komputasi awan")
